@@ -3,8 +3,14 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
-	<bean id="helloBean" class="com.mkyong.common.HelloWorld">
-		<property name="name" value="Mkyong" />
-	</bean>
+    <bean id="constructorBean" class="com.mkyong.common.HelloWorld">
+        <constructor-arg index="0">
+            <value>Mkyong</value>
+        </constructor-arg>
+        <constructor-arg index="1">
+            <value>18</value>
+        </constructor-arg>
+
+    </bean>
 	
 </beans>

@@ -10,6 +10,7 @@ public class AppTest {
    @Test
    public void shouldGetMKyong(){
 	   App app=new App();
-	   assertThat(app.showInjectedName(),is("Hello! Mkyong"));
+	   assertThat(app.getInfoName(),is("Hello! Mkyong"));
+	   assertThat(app.getInfoAge(),is("age:18"));
    }
 }

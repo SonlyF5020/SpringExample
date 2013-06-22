@@ -9,7 +9,6 @@ public class HelloWorldTest {
 	@Test
 	public void shouldBeHelloJames(){
 		HelloWorld helloWorld=new HelloWorld();
-		helloWorld.setName("James");
 		assertThat(helloWorld.returnString(),is("Hello! James"));
 	}
 }

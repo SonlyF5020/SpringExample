@@ -7,15 +7,23 @@ package com.mkyong.common;
 public class HelloWorld 
 {
 	private String name;
-	
-	public void setName(String name) {
+	private int age;
+
+	public HelloWorld(String name, int age) {
 		this.name = name;
+		this.age = age;
 	}
+	public HelloWorld(){}
 
 	public String returnString(){
 		return "Hello! "+name;
 	}
-	public void printHello() {
+
+	public String returnAge(){
+		return "age:"+age;
+	}
+	public void printInfo() {
 		System.out.println(returnString());
+		System.out.println(returnAge());
 	}
 }
