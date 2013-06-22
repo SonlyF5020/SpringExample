@@ -10,6 +10,6 @@ public class AppTest {
    @Test
    public void shouldGetMKyong(){
 	   App app=new App();
-	   assertThat(app.obj.returnString(),is("Hello! Mkyong"));
+	   assertThat(app.showInjectedName(),is("Hello! Mkyong"));
    }
 }
